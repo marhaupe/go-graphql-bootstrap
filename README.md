@@ -25,4 +25,11 @@ dep ensure
 
 Instead of dep, you could just call `go get`. Since 99designs might introduce breaking changes in the way gqlgen works, your project might get a bit messed up.
 
-Now you're set to go! If you have and issues or improvements, feel free to open issues or submit a PR.
+Now you're set to go! Edit the schema in internal/schema.graphql and run `make regen` to run gqlgen. If you have and issues or improvements, feel free to open issues or submit a PR.
+
+## Included scripts
+
+- `make build [output]`: Builds project to the optionally given output parameter
+- `make regen`: Runs gqlgen
+- `make test`: Runs every test
+- `make coverage`: Runs every test and generates the test coverage to cover.html
