@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  go-graphql-bootstrap:
+    build: .
+    ports:
+      - "127.0.0.1:3000:3000"
