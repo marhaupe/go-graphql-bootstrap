@@ -29,6 +29,7 @@ Now you're set to go! Edit the schema in internal/schema.graphql and run `make r
 
 ## Included scripts
 
+- `make dev`: Runs main.go. Will be convenient e.g. if you have to set up envs or start up a database.
 - `make build [output]`: Builds project to the optionally given output parameter
 - `make regen`: Runs gqlgen
 - `make test`: Runs every test
