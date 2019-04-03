@@ -1,0 +1,7 @@
+type Query {
+  Test(arg: String): String
+}
+
+type Mutation {
+  Test(arg: String): String
+}

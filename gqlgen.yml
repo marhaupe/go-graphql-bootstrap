@@ -4,17 +4,12 @@
 # for detailed .gqlgen.yml documentation.
 
 schema:
-  - internal/schema.graphql
+  - server/schema.graphql
 
 exec:
-  filename: internal/server.go
-  package: internal
+  filename: server/gqlgen.go
+  package: server
 
 resolver:
-  filename: internal/resolver.go
-  package: internal
-  type: Resolver
-
-model:
-  filename: internal/models.go
-  package: internal
+  filename: rootResolver.go 
+  type: resolver  
