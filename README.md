@@ -1,6 +1,6 @@
 # go-graphql-bootstrap
 
-This is a very basic bootstrap for a GraphQL server powered by [gqlgen](https://github.com/99designs/gqlgen)
+This is a very basic bootstrap for a GraphQL server powered by [gqlgen](https://github.com/99designs/gqlgen). The only thing I added is logging. Per default, every query that is not an introspect query, including its variables and its result, will be logged.
 
 ## How to use this bootstrap
 
@@ -23,7 +23,7 @@ Download all dependencies (you must have [dep](https://github.com/golang/dep) in
 dep ensure
 ````
 
-Instead of dep, you could just call `go get`. Since 99designs might introduce breaking changes in the way gqlgen works, your project might get a bit messed up.
+Instead of dep, you could just call `go get`. Howevery, I can't guarantee that this project will support the gqlgen version downloaded by `go get`, so be warned. 
 
 Now you're set to go! Edit the schema in internal/schema.graphql and run `make regen` to run gqlgen. If you have and issues or improvements, feel free to open issues or submit a PR.
 
