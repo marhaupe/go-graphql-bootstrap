@@ -1,8 +1,11 @@
-output ?= server
+output ?= binaries
 
 domain ?= github.com
 user ?= marhaupe
 repository ?= go-graphql-bootstrap
+
+dev:
+	go run main.go
 
 build:
 	go build -o $(output)
